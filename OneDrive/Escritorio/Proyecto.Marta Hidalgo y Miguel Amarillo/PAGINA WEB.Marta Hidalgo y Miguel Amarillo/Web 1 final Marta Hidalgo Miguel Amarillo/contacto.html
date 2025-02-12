@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- hoja de estilos -->
+    <link rel="stylesheet" href="style.css">
+    <!-- fuente manrope -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Rubik:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+      <div class="header">
+        <a href="index.html">
+          <img src="media/logo3trips.png" class="img-header" />
+        </a>
+        <div class="enlaces-header">
+          <!-- Aquí usamos una lista para el menú desplegable -->
+          <div class="menu-container">
+            <a href="#" id="link-desplegable" class="menu-link">EXPERIENCIAS</a>
+            <ul class="menu-desplegable">
+              <li><a href="experiencias-tokio.html" class="menu-link-desplegable">TOKIO</a></li>
+              <li><a href="experiencias-roma.html" class="menu-link-desplegable">ROMA</a></li>
+              <li><a href="experiencias-fiji.html" class="menu-link-desplegable">FIJI</a></li>
+            </ul>
+          </div>
+          <a href="nosotros.html" class="menu-link">NOSOTROS</a>
+        </div>
+        <a href="contacto.html" class="boton-wrapper">
+          <p class="button-font">CONTACTA CON NOSOTROS</p>
+        </a>
+      </div>
+    </header>
+
+    <!--SLIDER-->
+    <section>
+        <div class="slider-contacto-img">
+            <h1 class="slider-titulo">
+                CONTACTO
+            </h1>
+        </div>
+    </section>
+
+    <!-- FORMULARIO Y MAPA -->
+    <div class="main-container-contacto">
+        <h2 class="title-text-second">NOS ENCANTARÍA SABER DE TI </h2>
+        <div class="title-line"></div>
+        <div class="contact-form-section-container">
+            <section class="contact-form-section">
+                <!-- TITULO FORMULARIO-->
+                <h2 class="title-text-formulario">Pide Información</h2>
+
+                <!-- FORMULARIO -->
+                <form class="formulario-contacto">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ejemplo: Marta" required>
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Ejemplo: Hidalgo Martí" required>
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="Ejemplo: martahm@gmail.com" required>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ejemplo: 666 666 666" required>
+                    <label for="exp">¿Estás interesado en una experiencia en concreto?</label>
+                    <select name="exp" id="exp">
+                    <option value="general-info">No, quiero información general</option>
+                    <option value="tokio">Tokio</option>
+                    <option value="roma">Roma</option>
+                    <option value="fiji">Fiji</option>
+                    </select>
+                    <label for="terminos">
+                        <input type="checkbox" id="terminos" name="terminos" required>
+                        Acepto los términos y condiciones
+                    </label>
+
+                    <button type="submit" class="btn-enviar">ENVIAR</button>
+                </form>
+            </section>
+
+            <!-- MAPA Y TEXTO -->
+            <section class="mapa-y-direccion">
+                <div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5573.919050882049!2d-0.3645411245652735!3d39.476319612339275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6048a4c69a7653%3A0xe71ddc69fd46aa7f!2sC.%20Artes%20Gr%C3%A1ficas%2C%2016%2C%20El%20Llano%20del%20Real%2C%2046010%20Valencia!5e1!3m2!1ses!2ses!4v1733227650933!5m2!1ses!2ses"></iframe>
+                </div>
+                <div class="direccion-texto">
+                    <p class="direccion-titulo">ENCUÉNTRANOS EN:</p><br>
+                    <p>Calle Artes gráficas 16</p><br>
+                    46010, Valencia, España</p>
+                </div>
+            </section>
+        </div>
+        <!--TEXTO REDES-->
+        <section id="texto-contacto">
+            <h2 class="title-text-second">¡ESTAMOS AQUÍ PARA AYUDARTE! </h2>
+            <div class="title-line-ayudarte"></div>
+            <div class="text-ayudarte">
+                <p>Gracias por confiar en nosotros. Una vez que completes el formulario,
+                    nuestro equipo se pondrá en contacto contigo lo antes posible para ayudarte
+                    con todos los detalles de tu próximo viaje. Si prefieres una respuesta más
+                    rápida, no dudes en llamarnos al 961 201 467. ¡Estamos encantados de
+                    atenderte y hacer realidad tu próxima aventura!</p>
+                <div class="image-container">
+                    <img src="media/redes.png" alt="Conéctate con nosotros">
+                </div>
+
+        </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="logo-footer">
+            <a href="index.html" class="link-img-footer"><img src="media/logo3trips.png" class="img-footer" /></a>
+        </div>
+        <div class="direccion-footer">
+            <p class="texto-footer">C/Artes gráficas 16,46010 Valencia</p>
+        </div>
+        <div class="icono-telefono"></div>
+        <div class="telefono">
+            <span>961201467</span>
+        </div>
+        <div class="condiciones-legales">
+            <a href="#">
+                <p class="texto-footer">Condiciones legales</p>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

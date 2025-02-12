@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- hoja de estilos -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- fuente manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Rubik:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <style>
+      .swiper {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: 700px;
+      }
+
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: #267aac;
+      }
+
+      .swiper-button-next {
+        margin-right: 40%;
+      }
+
+      .swiper-button-prev {
+        margin-left: 40%;
+      }
+    </style>
+
+    <title>Imágenes de Fiji</title>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="header">
+        <a href="index.html">
+          <img src="media/logo3trips.png" class="img-header" />
+        </a>
+        <div class="enlaces-header">
+          <!-- Aquí usamos una lista para el menú desplegable -->
+          <div class="menu-container">
+            <a href="#" id="link-desplegable" class="menu-link">EXPERIENCIAS</a>
+            <ul class="menu-desplegable">
+              <li>
+                <a href="experiencias-tokio.html" class="menu-link-desplegable"
+                  >TOKIO</a
+                >
+              </li>
+              <li>
+                <a href="experiencias-roma.html" class="menu-link-desplegable"
+                  >ROMA</a
+                >
+              </li>
+              <li>
+                <a href="experiencias-fiji.html" class="menu-link-desplegable"
+                  >FIJI</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a href="nosotros.html" class="menu-link">NOSOTROS</a>
+        </div>
+        <a href="contacto.html" class="boton-wrapper">
+          <p class="button-font">CONTACTA CON NOSOTROS</p>
+        </a>
+      </div>
+    </header>
+
+    <!--SLIDER-->
+    <section name="slider">
+      <div class="slider-imagenes slider-fiji">
+        <div class="slider-text-container">
+          <h1 class="slider-text-experiencia">FIJI</h1>
+        </div>
+      </div>
+    </section>
+
+    <!--MENU-->
+    <section>
+      <div class="menu-botons-experiencias">
+        <a href="imagenes-fiji.html" class="boton-menu focus">
+          <p class="button-menu">IMÁGENES</p>
+        </a>
+        <a href="reseñas-fiji.html" class="boton-menu">
+          <p class="button-menu">RESEÑAS</p>
+        </a>
+        <a href="personaliza-fiji.html" class="boton-menu">
+          <p class="button-menu">PERSONALIZA</p>
+        </a>
+      </div>
+    </section>
+
+    <!--SECTION SLIDES SWIPER-->
+
+    <section name="slides-imagenes-swiper">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="media/imgs-carrusel/1.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="media/imgs-carrusel/2.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="media/imgs-carrusel/3.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="media/imgs-carrusel/4.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="media/imgs-carrusel/5.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="media/imgs-carrusel/6.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="media/imgs-carrusel/7.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="media/imgs-carrusel/8.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="media/imgs-carrusel/9.jpg" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="logo-footer">
+        <a href="index.html" class="link-img-footer"
+          ><img src="media/logo3trips.png" class="img-footer"
+        /></a>
+      </div>
+
+      <div class="direccion-footer">
+        <p class="texto-footer">C/Artes gráficas 16,46010 Valencia</p>
+      </div>
+
+      <div class="icono-telefono"></div>
+      <div class="telefono">
+        <span>961201467</span>
+      </div>
+
+      <div class="condiciones-legales">
+        <a href="contacto.html"
+          ><p class="texto-footer">Condiciones legales</p></a
+        >
+      </div>
+    </footer>
+
+    <!-- Swiper -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

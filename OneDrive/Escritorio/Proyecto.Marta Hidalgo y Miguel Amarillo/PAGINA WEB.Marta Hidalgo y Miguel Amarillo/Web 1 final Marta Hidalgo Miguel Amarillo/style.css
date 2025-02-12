@@ -1,0 +1,814 @@
+html {
+  font-family: "manrope", sans-serif;
+}
+
+body {
+  background-color: #f0f4f8;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------------------- INDEX.HTML -------------------------------------------------------------------------------------- */
+
+/* header */
+
+.header {
+  background-color: #267aac;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 0 0.2rem 0.25rem rgba(0, 0, 0, 0.2);
+}
+
+.img-header {
+  width: 200px;
+  height: 60px;
+  margin-left: 140px;
+}
+
+.enlaces-header {
+  position: center;
+  display: flex;
+}
+
+.menu-link {
+  height: 60px;
+  color: #f0f4f8;
+  font-weight: bold;
+  font-size: 12pt;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-link:hover {
+  background-color: #0e5d8b;
+}
+
+.boton-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+  height: 40px;
+  background-color: #e4e310;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 8pt;
+  color: #343638;
+  margin-right: 140px;
+}
+
+.boton-wrapper:hover {
+  opacity: 70%;
+}
+
+.button-font {
+  font-weight: bold;
+  font-size: 12pt;
+  color: #343638;
+  margin: 10px;
+}
+
+/* Estilos generales del menú */
+.menu-container {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-desplegable {
+  display: none; /* Oculto por defecto */
+  position: absolute;
+  top: 100%; /* Justo debajo del enlace 'EXPERIENCIAS' */
+  left: 0;
+  background-color: #0e5d8b;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 20;
+}
+
+/* Mostrar el menú al hacer hover sobre el enlace */
+.menu-container:hover .menu-desplegable {
+  display: block;
+}
+
+.menu-link-desplegable {
+  color: #f0f4f8;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Efecto hover en los enlaces del menú */
+.menu-link-desplegable:hover {
+  cursor: pointer;
+  background-color: #267aac;
+}
+
+/* slider */
+
+.slider {
+  margin-top: 55px;
+  height: 30vh;
+  width: 100%;
+  background: url("./media/foto-slider.jpg");
+  background-size: cover;
+  background-position: 0%, 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.slider-text {
+  color: #f0f4f8;
+  font-weight: bold;
+  font-size: 32pt;
+  width: 50%;
+  text-shadow: 0 0.2rem 0.25rem rgba(0, 0, 0, 0.2);
+}
+
+/* title */
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.title-container {
+  width: 40%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 4px solid #267aac;
+}
+
+.title-text {
+  font-size: 24pt;
+  font-weight: bold;
+  color: #343638;
+}
+
+/* cards */
+
+.cards-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tarjeta {
+  width: 400px;
+  border-radius: 24px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  /*getcsscan.com*/
+  padding-bottom: 20px;
+}
+
+.img-tarjeta {
+  width: 400px;
+  height: 170px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+.img-tarjeta-tokio {
+  background: url("./media/tokio.webp");
+  background-size: cover;
+  background-position: 0%, 10%;
+}
+
+.img-tarjeta-roma {
+  background: url("./media/roma.webp");
+  background-size: cover;
+  background-position: 0%, 10%;
+}
+
+.img-tarjeta-fiji {
+  background: url("./media/fiji.webp");
+  background-size: cover;
+  background-position: 0%, 10%;
+}
+
+.tarjeta-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.texto-tarjeta {
+  margin-left: 5px;
+}
+
+.subtitulo-tarjeta {
+  margin: 2px;
+  font-size: 12pt;
+  color: #343638;
+}
+
+.titulo-tarjeta {
+  margin: 2px;
+  font-size: 24pt;
+  font-weight: bold;
+  color: #343638;
+}
+
+.precio {
+  width: 150px;
+  background-color: #e4e310;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.precio-content {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.tarjeta-2 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.paquete {
+  width: 80px;
+  border-radius: 8px;
+  border: 1px solid #267aac;
+  background-color: #267aac;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px;
+}
+
+.extras-1 {
+  font-size: 20pt;
+  font-weight: bold;
+  color: white;
+}
+
+.extras-2 {
+  font-size: 10pt;
+  color: white;
+  margin: 0;
+}
+
+.tarjeta-link:hover {
+  opacity: 70%;
+}
+
+/* footer */
+
+footer {
+  background-color: #267aac;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  box-shadow: 0 0.2rem 0.25rem rgba(0, 0, 0, 0.2);
+}
+
+.logo-footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.img-footer {
+  width: 100px;
+  height: 30px;
+}
+
+.link-img-footer {
+  margin-left: 140px;
+}
+
+.direccion-footer {
+  width: 300px;
+}
+
+.texto-footer {
+  color: #f0f4f8;
+  font-size: 10pt;
+}
+
+.icono-telefono {
+  width: 20px;
+  height: 40px;
+  background: url("./media/mdi_telephone.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 30px;
+  margin-right: 5px;
+}
+
+.telefono {
+  font-size: 14pt;
+  color: #e4e310;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.condiciones-legales {
+  width: 200px;
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+/* -------------------------------------------------------------------------------------- NOSOTROS.HTML -------------------------------------------------------------------------------------- */
+
+/*PAGINA WEB NOSOTROS*/
+
+.main-container-nosotros {
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+#nuestra-historia {
+  margin-left: 50px;
+}
+
+.slider-nosotros-img {
+  margin-top: 55px;
+  height: 15vh;
+  width: 100%;
+  background: url("./media/contacto.jpg");
+  background-size: cover;
+  background-position: 0%, 10%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.slider-titulo {
+  color: #f0f4f8;
+  font-weight: bold;
+  font-size: 50pt;
+  text-shadow: 0 0.2rem 0.25rem rgba(0, 0, 0, 0.2);
+  margin-left: 50px;
+}
+
+.title-text-second {
+  font-size: 20pt;
+  font-weight: bold;
+  color: #343638;
+  margin: 20px 0 8px 0;
+}
+
+.nuestro-equipo-title {
+  margin-left: 50px;
+}
+
+.title-line {
+  border-bottom: 4px solid #267aac;
+  width: 500px;
+}
+
+.text-historia {
+  margin-right: 160px;
+}
+
+.text-historia p {
+  line-height: 2;
+}
+
+.cards-container-equipo {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+  gap: 150px;
+}
+
+.tarjeta-equipo {
+  width: 350px;
+  height: 363px;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.img-tarjeta-juan {
+  background: url("./media/JUANHORTS.jpg");
+  background-size: cover;
+  background-position-y: 25%;
+}
+
+.img-tarjeta-marta {
+  background: url("./media/MARTAHIDALGO.jpg");
+  background-size: cover;
+  background-position-y: 20%;
+}
+
+.img-tarjeta-miguel {
+  background: url("./media/MIGUELAMARILLO.jpg");
+  background-size: cover;
+  background-position-x: center;
+}
+
+.img-tarjeta-equipo {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: center;
+  color: #f0f4f8;
+}
+
+.titulo-tarjeta-equipo {
+  font-size: 18pt;
+  font-weight: bold;
+  margin: 0;
+}
+
+.subtitulo-tarjeta-equipo {
+  font-size: 18pt;
+  margin-bottom: 15px;
+}
+
+.boton-nosotros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.boton-wrapper-nosotros {
+  margin-top: 50px;
+  padding-inline: 12px;
+  background-color: #e4e310;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 8pt;
+  color: #343638;
+
+  :hover {
+    opacity: 70%;
+  }
+}
+
+#texto-contacto {
+  margin-bottom: 100px;
+}
+
+/* -------------------------------------------------------------------------------------- CONTACTO.HTML -------------------------------------------------------------------------------------- */
+
+/*PAGINA CONTACTO*/
+
+.main-container-contacto {
+  margin-left: 50px;
+}
+
+.slider-contacto-img {
+  margin-top: 55px;
+  height: 10vh;
+  width: 100%;
+  background: url("./media/contacto1.jpg");
+  background-size: cover;
+  background-position: 0%, 10%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.title-text-formulario {
+  font-size: 20pt;
+  font-weight: 900;
+  color: #343638;
+  margin-bottom: 15px;
+  text-align: left;
+  margin-top: 0;
+  text-shadow: 1px 1px 2px rgba(52, 54, 56, 0.5);
+}
+
+.contact-form-section {
+  border: 1pt solid black;
+  border-radius: 20px;
+  width: 50%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  padding: 28px;
+  background-color: #f8f8ff;
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formulario-contacto label {
+  font-size: 10pt;
+  font-weight: bold;
+  color: #343638;
+}
+
+.formulario-contacto input,
+select {
+  padding: 8px;
+  font-size: 10pt;
+  border-radius: 20px;
+  border: 1pt solid #267aac;
+}
+
+.formulario-contacto input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.formulario-contacto button {
+  background-color: #e4e310;
+  color: #343638;
+  font-weight: bold;
+  padding: 7px;
+  border: none;
+  border-radius: 30px;
+  font-size: 12pt;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.formulario-contacto button:hover {
+  opacity: 70%;
+}
+
+.title-line-ayudarte {
+  border-bottom: 4px solid #267aac;
+  width: 500px;
+}
+
+.text-ayudarte {
+  margin-right: 600px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contact-form-section-container {
+  margin-top: 10px;
+  gap: 80px;
+  display: flex;
+}
+
+.mapa-y-direccion {
+  width: 35%;
+}
+
+.mapa-container {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.direccion-titulo {
+  font-weight: bold;
+  font-size: 14pt;
+}
+
+.direccion-texto {
+  font-size: 10pt;
+  margin-top: 5px;
+  color: #343638;
+}
+
+.direccion-texto p {
+  margin: 0;
+  line-height: 1;
+}
+
+iframe {
+  width: 100%;
+  height: 450px;
+  border-radius: 30px;
+}
+
+/* -------------------------------------------------------------------------------------- EXPERIENCIAS.HTML -------------------------------------------------------------------------------------- */
+
+/*PAGINA  EXPERIENCIAS*/
+
+/*SLIDER*/
+.slider-experiencias {
+  margin-top: 55px;
+  height: 25vh;
+
+  display: flex;
+}
+
+.slider-tokio {
+  background: url("./media/tokio.webp");
+  background-size: cover;
+  background-position: 0%, 10%;
+}
+
+.slider-roma {
+  background: url("./media/roma.webp");
+  background-size: cover;
+  background-position: 0%, 10%;
+}
+
+.slider-fiji {
+  background: url("./media/fiji.webp");
+  background-size: cover;
+  background-position: 0%, 10%;
+}
+
+.slider-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+
+.slider-text-experiencias {
+  color: #f0f4f8;
+  font-weight: bold;
+  font-size: 32pt;
+  text-shadow: 0 0.2rem 0.25rem rgba(0, 0, 0, 0.2);
+  margin: 0;
+}
+
+.slider-subtitulo {
+  color: #f0f4f8;
+  font-size: 16pt;
+  margin: 0;
+  width: auto;
+  text-align: left;
+  max-width: 80%;
+  text-shadow: 0 0.2rem 0.25rem rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+
+/*MENU*/
+
+.menu-text-experiencias {
+  font-size: 18pt;
+  color: #343638;
+  margin-bottom: 62px;
+  max-width: 40%;
+  line-height: 1.6;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+.negrita {
+  font-weight: bold;
+}
+
+.menu-botons-experiencias {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.boton-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #267aac;
+  padding: 5px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  width: 158px;
+  height: 40px;
+}
+
+.focus {
+  opacity: 70%;
+}
+
+.boton-menu .button-menu {
+  color: #f0f4f8;
+  font-size: 14pt;
+  font-weight: bold;
+  margin: 0;
+}
+
+.boton-menu:hover {
+  opacity: 70%;
+}
+
+/* -------------------------------------------------------------------------------------- RESEÑAS.HTML -------------------------------------------------------------------------------------- */
+
+/*RESEÑAS*/
+.slider-reseñas-img {
+  margin-top: 55px;
+  height: 15vh;
+  width: 100%;
+  background: url("./media/tokio.webp");
+  background-size: cover;
+  background-position: 0%, 10%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.video-pequeno {
+  height: 350px;
+  max-width: 850px;
+  margin: 30px auto;
+  display: block;
+}
+
+/* -------------------------------------------------------------------------------------- IMÁGENES.HTML -------------------------------------------------------------------------------------- */
+
+/*IMÁGENES*/
+
+.slider-imagenes {
+  margin-top: 55px;
+  height: 15vh;
+  display: flex;
+}
+
+.slider-text-experiencia {
+  color: #f0f4f8;
+  font-weight: bold;
+  font-size: 50pt;
+  text-shadow: 0 0.2rem 0.25rem rgba(0, 0, 0, 0.2);
+  margin: 0;
+}
+
+/* -------------------------------------------------------------------------------------- PERSONALIZA.HTML -------------------------------------------------------------------------------------- */
+
+/*PERSONALIZA*/
+
+.personaliza {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+.vacia {
+  background-color: #34363877;
+}
+
+table {
+  border: 2px solid #343638;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  width: 200px;
+  height: 80px;
+  text-align: center;
+  border: 2px solid #343638;
+  border-collapse: collapse;
+  color: #343638;
+  font-weight: bold;
+}
+
+th {
+  background-color: #0e5d8b;
+  color: #f0f4f8;
+}
+
+/* Estilos del contenedor y el gráfico */
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+.grafico-container {
+  width: 30%;
+  border-radius: 30px;
+  box-shadow: 0 0.2rem 0.25rem rgba(0, 0, 0, 0.2);
+  padding: 5px;
+}
+
+.grafico-title {
+  text-align: center;
+  font-size: 20pt;
+  color: #343638;
+  font-weight: bold;
+}
